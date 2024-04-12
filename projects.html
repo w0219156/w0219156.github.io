@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Steve Duncan - Projects</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-link, .card-link:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            padding: 10px 15px;
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+
+        /* Updated styles for navbar and footer text */
+        .navbar-dark .navbar-brand, .navbar-dark .nav-link, footer.text-white {
+            color: #3C6E71 !important;
+        }
+
+        footer.bg-dark {
+            background: linear-gradient(to right, #353535, #3C6E71, #284B63);
+        }
+
+        /* Slide-in animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .card {
+            animation: slideIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bolder" href="index.html">Steve Duncan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Projects Section-->
+        <section class="py-5" style="background: linear-gradient(to right, #353535, #3C6E71, #284B63);">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder text-white">Projects</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 gx-5">
+                    <!-- Project Card 1: Weather app-->
+                    <div class="col mb-4">
+                        <div class="card h-100 shadow bg-dark card-hover">
+                            <a href="https://github.com/w0219156/AndroidWeatherApp" class="card-link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/weatherapp.jpg" class="card-img-top" alt="https://github.com/w0219156/AndroidWeatherApp">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Weather App</h5>
+                                    <p class="card-text text-white">A weather app developped in andriod studio and making use
+                                        of public apis for weather data.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2: FiscalFeel -->
+                    <div class="col mb-4">
+                        <div class="card h-100 shadow bg-dark card-hover">
+                            <a href="https://github.com/w0219156/FiscalFeel" class="card-link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/fiscalfeel.jpg" class="card-img-top"
+                                    alt="AI sentiment anaylysis">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">AI Stock Sentiment Analysis</h5>
+                                    <p class="card-text text-white">Developed a custom AI that read publically available news articles 
+                                        to generate stock market sentiment.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3: Node Phote App -->
+                    <div class="col mb-4">
+                        <div class="card h-100 shadow bg-dark card-hover">
+                            <a href="https://github.com/w0219156/NodePhotoApp" class="card-link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/nodephoto.jpg" class="card-img-top"
+                                    alt="Node Photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Node Mobile Photo App</h5>
+                                    <p class="card-text text-white">Node JS app to upload photos to a custom social media app.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100 shadow bg-dark card-hover">
+                            <a href="https://github.com/w0219156/DesktopMediaPlayer" class="card-link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/mediaplayer.jpg" class="card-img-top" alt="Media PLayer">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Desktop Media player</h5>
+                                    <p class="card-text text-white">WPF media player application featuring database integration.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark py-4 mt-auto text-white">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small">Copyright &copy; Steve Duncan 2024</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="https://github.com/shortword1">GitHub</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="http://www.kinsle.ca">Website</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

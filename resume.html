@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Steve Duncan - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
+    <script>
+        function toggleCoverLetter() {
+            var coverLetterContent = document.getElementById("coverLetterContent");
+            var toggleIcon = document.getElementById("toggleIcon");
+            if (coverLetterContent.style.display === "none") {
+                coverLetterContent.style.display = "block";
+                toggleIcon.classList.remove("bi-chevron-down");
+                toggleIcon.classList.add("bi-chevron-up");
+            } else {
+                coverLetterContent.style.display = "none";
+                toggleIcon.classList.remove("bi-chevron-up");
+                toggleIcon.classList.add("bi-chevron-down");
+            }
+        }
+    </script>
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #353535, #3C6E71, #284B63);
+    }
+    #coverLetterContent {
+        color: white; /* Set text color to white */
+    }
+    #toggleLabel {
+        font-size: 20px; /* Increase font size for the toggle label */
+        font-weight: bold; /* Make the label bold */
+        cursor: pointer;
+        user-select: none;
+        color: white;
+    }
+</style>
+
+<body class="d-flex flex-column h-100">
+    
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-dark py-3">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bolder" href="index.html" style="color: white;">Steve Duncan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- Expander with larger label -->
+            <div id="toggleLabel" onclick="toggleCoverLetter()">
+                <i id="toggleIcon" class="bi bi-chevron-down"></i> <span>Cover Letter</span>
+            </div>
+            <div id="coverLetterContent" style="display: none; padding: 20px 0;">
+                <h2>Cover Letter</h2>
+                <p>I am eager to move into a role where I will be leveraging my background in IT programming and extensive experience in project management and financial advisory. As an IT Programming graduate from Nova Scotia Community College, I possess comprehensive skills in Python, C++, and web development, complemented by proven leadership in overseeing complex projects and financial operations.</p>
+                <p>At Airsys Engineering, I led key transitions and technology integrations, enhancing business processes and efficiency. My financial tenure at TD Bank and Scotiabank, where I managed significant asset portfolios and drove sales achievements, reflects my strategic and analytical capabilities.</p>
+                <p>Recognized for my excellence with multiple awards, including the best-of-the-best from Scotiabank, I am adept at navigating high-stakes environments and pioneering innovative solutions. I am keen to contribute.</p>
+                <p>I look forward to discussing how my skills and experiences align with the needs of your team. Please feel free to contact me at steveduncan0@gmail.com.</p>
+                <p>Warm regards,</p>
+                <p>Steve Duncan</p>
+            </div>
+        </div>
+        <!-- Resume Content-->
+        <section class="bg-dark py-5">
+            <div class="container text-white">
+                <!-- Education Section-->
+                <h2 class="fw-bolder mb-4">Education</h2>
+                <p>IT programming | NSCC</p>
+                <p>SEPTEMBER 2022 – MAY 2024</p>
+                <p>I will complete my time at NSCC in May 2024 and anticipate graduating with honours. My time at NSCC has provided in-depth experience in several programming languages, technologies, and methodologies.</p>
+                <!-- Experience Section-->
+                <h2 class="fw-bolder mb-4">Experience</h2>
+                <p>Project Manager | Airsys Engineering</p>
+                <p>SEPTEMBER 2019 – JULY 2022</p>
+                <ul>
+                    <li>Analyzed blueprints and other documentation to prepare time, cost, materials, and labor estimates.</li>
+                    <li>Prepared technical documents for specification matching and operating manuals.</li>
+                    <li>Provided oversight and management while transiting Airsys to new owners and modernizing workflow to digital standards.</li>
+                    <li>Learned and deployed a bespoke software suite for estimating while developing the procedures to integrate the new technology into the existing workflow.</li>
+                    <li>Provided IT support for deploying and administering Office 365.</li>
+                    <li>Coordinated technical requirements, deliveries, and costs between our customers and suppliers.</li>
+                </ul>
+                <p>Senior Financial Advisor | TD Bank</p>
+                <p>JULY 2016 – SEPTEMBER 2019</p>
+                <ul>
+                    <li>Licensed financial officer responsible for supervising and signing off on trades of junior advisors.</li>
+                    <li>Supervised and supported a sales team handling over a billion dollars in assets.</li>
+                    <li>Consistently achieved personal sales goal of 40 million dollars annually.</li>
+                    <li>Managed and resolved escalated customer issues, including regulatory issues.</li>
+                </ul>
+                <p>Financial Advisor | Scotiabank</p>
+                <p>JULY 2013 – JULY 2016</p>
+                <ul>
+                    <li>Conducted all front-line branch activities, including opening and closing.</li>
+                    <li>Monitored client portfolios to provide timely advice.</li>
+                    <li>Worked with customers and adjudicators to fulfill mortgage requests.</li>
+                    <li>Provided day-to-day advice on all retail products.</li>
+                </ul>
+                <!-- Skills Section-->
+                <h2 class="fw-bolder mb-4">Skills</h2>
+                <ul>
+                    <li>Proven management in a fast-paced, high-stakes environment.</li>
+                    <li>Problem-solving skills honed on high-conflict challenging issues.</li>
+                    <li>Balancing the concerns of various stakeholders to create win-win outcomes.</li>
+                    <li>Team-focused with experience motivating and delegating.</li>
+                    <li>Organized and meticulous.</li>
+                    <li>Git and GitHub admin</li>
+                    <li>Programming in Python, C++ and C#, PHP.</li>
+                    <li>SQL and working with MySQL and MariaDB.</li>
+                    <li>Network programming and deployment.</li>
+                    <li>CSS, HTML, and JavaScript.</li>
+                    <li>Can quickly learn and apply new technical knowledge as needed.</li>
+                    <li>Experience deploying AI and ML solutions.</li>
+                </ul>
+                <!-- Awards Section-->
+                <h2 class="fw-bolder mb-4">Awards</h2>
+                <ul>
+                    <li>Twice awarded best-of-the-best award from Scotiabank, the highest national sales award.</li>
+                    <li>Champions award from TD – a peer-nominated award for contributions made in the management and career development of peers.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright © Steve Duncan 2024</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small text-white" href="https://github.com/shortword1">GitHub</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="small text-white" href="http://www.kinsle.ca">Website</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
